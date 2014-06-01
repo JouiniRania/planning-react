@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "build-dev": "browserify -e app/bootstrap.js -t reactify -o public/scripts/bundle.dev.js -d",
+    "watch-dev": "watchify -v -e app/bootstrap.js -t reactify -o public/scripts/bundle.dev.js -d",
+    "build-min": "browserify -e app/bootstrap.js -t reactify -t uglifyify -o public/scripts/bundle.min.js"
+  },
+  "dependencies": {
+    "react": "~0.10.0"
+  },
+  "devDependencies": {
+    "browserify": "^4.1.6",
+    "react-tools": "^0.10.0",
+    "reactify": "^0.13.1",
+    "uglifyify": "^2.4.0",
+    "watchify": "^0.10.2"
+  }
+}
