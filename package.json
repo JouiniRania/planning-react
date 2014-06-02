@@ -5,6 +5,7 @@
     "build-min": "browserify -e app/bootstrap.js -t reactify -t uglifyify -o public/scripts/bundle.min.js"
   },
   "dependencies": {
+    "express": "^4.4.0",
     "react": "~0.10.0"
   },
   "devDependencies": {

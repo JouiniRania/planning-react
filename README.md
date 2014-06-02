@@ -20,10 +20,10 @@ npm run-script build-dev
 # npm run-script watch-dev
 ```
 
-Then launch a server with `public/` as "DocumentRoot". Example using python:
+Then launch the server:
 
 ```sh
-(cd public && python -m SimpleHTTPServer)
+npm start
 ```
 
 Then visit [http://localhost:8000](http://localhost:8000) in a web browser.
