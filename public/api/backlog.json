@@ -1,3 +1,0 @@
-[ {"xref":"story #5625", "title":"Refactor events needed by Layout", "points":"13", "color": "blue"},
-    {"xref":"bug #5625", "title":"cannot open task anymore", "points":"1", "color":"red"},
-    {"xref":"story #5625", "title":"Display/have a quick access to the current sprint/release in the AgilePashboard plugin", "points":"3", "color":"blue"} ]

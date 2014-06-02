@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "express": "^4.4.0",
+    "lorem-ipsum": "^1.0.1",
     "react": "~0.10.0"
   },
   "devDependencies": {
