@@ -2,10 +2,31 @@
 var React = require("react");
 
 var BacklogItemView = React.createClass({
+
+    getInitialState: function() {
+        return {
+            open: false
+        };
+    },
+
+    toggleChildren: function() {
+        this.setState({open: !this.state.open});
+    },
+
     render: function() {
+        var toggleClass = this.state.open ? 'is_open' : 'is_closed';
+
         return (
             <li className="backlog_item">
-                {this.props.children}
+                <div className="backlog_item_title">
+                    {this.props.children}
+                </div>
+                <div className="backlog_item_children_wrapper">
+                    <div className={"backlog_item_children " + toggleClass}>
+                        Coucou, tu veux voir mes fils?
+                    </div>
+                    <a onClick={this.toggleChildren} className="show_children">…</a>
+                </div>
             </li>
         );
     }
